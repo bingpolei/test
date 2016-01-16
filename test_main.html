@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <link type="text/css" href="test.css" rel="stylesheet"/>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="awardRotate.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+</head>
+<body style="background:#e62d2d;overflow-x:hidden;">
+    <div class="load">
+        姓&nbsp;名：<input type="text"/><br><br>
+        手机号：<input type="number"/><br><br>
+        车牌号：<input type="number"/><br><br>
+        保险到期时间：<input type="date"/><br><br>
+        <input id="btn" type="button" value="提交" onclick="chenge()"/>
+    </div>
+<br>
+<!-- 代码 开始 -->
+<img  id="shan-img" style="display:none;" />
+<img  id="sorry-img" style="display:none;" />
+<div class="banner">
+    <div class="turnplate" style="background-size:100% 100%;">
+        <canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
+        <img class="pointer" src="images/pointer.png"/>
+    </div>
+
+    <div class="txt">
+        <p>一等奖：500元保险代金券（满3500元以上可以使用)</p>
+        <p>二等奖：300元保险代金券（满2000元可以使用）</p>
+        <p>三等奖：150元保险代金券一张（保险满1000元可以使用）</p>
+        <p>四等奖：100元保险代金券（无门槛）</p>
+        <p>五等奖：专车专用机滤代金券一张</p>
+        <p>六等奖：四轮定位一次</p>
+        <p>七等奖：全车抛光一次</p>
+        <p>八等奖：价值三十水蜡洗车一次</p>
+        <p>注：以上奖项需到店现场兑换</p>
+    </div>
+
+</div>
+<!-- 代码 结束 -->
+</body>
+</html>
